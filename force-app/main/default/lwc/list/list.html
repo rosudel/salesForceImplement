@@ -1,0 +1,9 @@
+<template>
+    <div class="container">
+        <template for:each={bikes} for:item="bike">
+            <c-tile key={bike.fields.Id.value} product={bike} ontileclick={handleTileClick}>
+                <!--Firing the newly created custom event named 'tileclick'-->
+            </c-tile>
+        </template>
+    </div>
+</template>
